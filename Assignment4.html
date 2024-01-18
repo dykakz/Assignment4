@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <title>Sesi 17</title>
+</head>
+<body>
+  <section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
+          <div class="card-body py-4 px-4 px-md-5">
+
+            <h5 class="text-center">Covid-19 Tracker</h5>
+            <div class="input-group mb-3">
+                <input id="inputRegion" type="text" class="form-control" placeholder="Masukkan Region" aria-label="Masukkan Region" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" onclick="buttonClick()" id="button-addon2">Get Data</button>
+            </div>
+            <div>
+                <p id="show-error" class="text-danger"></p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Active Cases</h5>
+                      <p id="activeCases" class="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">New Cases</h5>
+                      <p id="newCases" class="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Recovered Cases</h5>
+                      <p id="recoveredCases" class="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Total Cases</h5>
+                      <p id="totalCases" class="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <!-- <img src="..." class="card-img-top" alt="..."> -->
+                      <div class="card-body">
+                        <h5 class="card-title">Total Deaths</h5>
+                        <p id="totalKill" class="card-text"></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <!-- <img src="..." class="card-img-top" alt="..."> -->
+                      <div class="card-body">
+                        <h5 class="card-title">Total Tests</h5>
+                        <p id="totalTests" class="card-text"></p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="index4.js"></script>
+</html>
